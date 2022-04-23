@@ -1,4 +1,3 @@
-trinagle.c
 #include "main.h"
 
 /**

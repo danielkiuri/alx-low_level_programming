@@ -1,24 +1,34 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
-* main - Entry point
-* Return: Always 0 (Success)
-*/
+* main - loop through variables a and b, printing digits
+*
+* Return: print to stdout all possible different combinations of twodigits
+**/
 int main(void)
 {
-	int d;
+int a = '0';
+int b;
 
-	for (d = 0; d < 90; d++)
-	{
-		putchar((d / 10) + '0');
-		putchar((d % 10) + '0');
-		if (d != 89)
-		{
-			putchar(',');
-			putchar(' ');
-		}
-	}
-	putchar('\n');
-	return (0);
+while (a <= '9')
+{
+b = a + 1;
+while (b <= '9')
+{
+putchar(a);
+putchar(b);
+if (a == '8' && b == '9')
+{
+putchar('\n');
+}
+else
+{
+putchar(',');
+putchar(' ');
+}
+b++;
+}
+a++;
+}
+return (0);
 }

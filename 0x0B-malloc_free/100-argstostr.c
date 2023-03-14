@@ -17,7 +17,7 @@ if (ac == 0)
 {
 return (NULL);
 }
-for (c = 1 = = 0; i < ac; i++)
+for (c = i = 0; i < ac; i++)
 {
 if (av[i] == NULL)
 return (NULL);

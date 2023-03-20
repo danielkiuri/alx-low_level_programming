@@ -1,13 +1,12 @@
 #include <stdio.h>
 
 /**
-* main - check the code for ALX students
-*
-* Return: Always 0.
-*/
-
+ * main - preints the name of the file
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	printf(%s\n", __FILE__);
+	printf("%s\n", __FILE__);
 	return (0);
 }
